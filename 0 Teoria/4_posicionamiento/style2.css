@@ -1,0 +1,16 @@
+.padre {
+    background: #f13929;
+    height: 200px;
+    width: 200px;
+    position: relative;/*desbloquea el posicionamiento*/
+    left: 200px;
+
+}
+.hijo {
+    background: #7888ea;
+    height: 50px;
+    width: 50px;
+    position: absolute;/*necesita un padre relative como referencia*/
+    left: 0px;
+    bottom: 0px;
+}

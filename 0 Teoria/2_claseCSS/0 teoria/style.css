@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.padre {
+    background: red;
+    height: 300px;
+    width: 300px;
+    /* margin: 20px 100px; */
+    padding: 20px;
+}
+
+.hijo {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+
+}
+
+p span {
+    color: chartreuse;
+}
