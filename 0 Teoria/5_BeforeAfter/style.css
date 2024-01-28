@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white;
+}
+
+.hijo {
+    background: #4c35aa;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+/*Uso decorador Before - After: aboms necesitan un CONTENT*/
+.hijo::before {
+    background: red;
+    content: "before";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+}
+.hijo::after {
+    background: white;
+    content: "after";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+}
