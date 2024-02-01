@@ -1,0 +1,20 @@
+.box {
+    display: inline-block; /*de izquierda a derecha y agrega un cuadrado alrededor*/
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+
+#dos {
+    position: relative; /*posicion en cuanto a si misma*/
+    top: 20px;
+    left:20px;
+    background: green;
+}
+/* #dos {
+    position: absolute;/*posicion en cuanto a su padre (contenedor)*/
+    /* top: 40px;
+    left:40px;
+    background: green; */
+/* } */ 
