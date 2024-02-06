@@ -1,3 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -36,9 +42,30 @@
   .search-bar:focus-within {
     border: 1px solid #aaa;
     box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2)
-    /*coordenada x de izq a der, coordena y de arriba abajo*/
+    /*coordenada x de izq a der, coordenada y de arriba abajo*/
   }
 
   .search-bar input {
     border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    flex: auto; /*expande el elemento input  a izquierda y derecha rellenando los espacios que esten vaios*/
+  }
+
+  .search-bar .actions {
+    display: flex;
+    gap: 5px;
+  }
+
+  .search-bar .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+  }
+
+  .search-bar .actions button:hover {
+    color: #2979e2;
   }
