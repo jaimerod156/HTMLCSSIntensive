@@ -1,3 +1,50 @@
+:root {
+  --color1:#FFB481;
+}
+
 body {
-  background-color: aqua;
+  font-family: sans-serif;
+  background-color: var(--color1);
+  background-image: url("../img/fondoTop.svg"), url("../img/fondoBotton.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  /*uso de SASS que hijo pertenece a que padre*/
+}
+.card-header {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  display: block;
+}
+.card-body {
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body-contentimg {
+  border: 5px solid #F08B63;
+  border-radius: 50%;
+  background-color: #FFD8C7;
+  box-shadow: 0px -10px 20px #F08B63;
+}
+.card-body-contentimg-img {
+  padding: 20px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */
