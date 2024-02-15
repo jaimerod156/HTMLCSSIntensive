@@ -1,5 +1,15 @@
 :root {
   --color1:#FFB481;
+  --color2: #FCB173;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*100% = 16 px => 10px= 62.6%*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -21,30 +31,43 @@ body {
   background-color: white;
   width: 320px;
   border-radius: 16px;
+  overflow: hidden;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   /*uso de SASS que hijo pertenece a que padre*/
 }
 .card-header {
-  border-radius: 16px 16px 0 0;
   width: 100%;
   display: block;
 }
 .card-body {
-  background-color: greenyellow;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--color2);
 }
 .card-body-contentimg {
   border: 5px solid #F08B63;
   border-radius: 50%;
   background-color: #FFD8C7;
   box-shadow: 0px -10px 20px #F08B63;
+  margin-top: -58px;
 }
 .card-body-contentimg-img {
   padding: 20px;
 }
+.card-body-title {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.card-body-title span {
+  color: var(--color2);
+}
 .card-footer {
   display: flex;
   justify-content: space-around;
+}
+.card-footer-poder {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */

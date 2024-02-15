@@ -1,6 +1,16 @@
 :root {
     --color1:#FFB481;
+    --color2: #FCB173;
 }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*100% = 16 px => 10px= 62.6%*/
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body {
     font-family: sans-serif;
@@ -16,35 +26,50 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .card {
     background-color: white;
     width: 320px;
     border-radius: 16px;
+    overflow: hidden;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
     /*uso de SASS que hijo pertenece a que padre*/
     &-header{
-        border-radius: 16px 16px 0 0;
         width: 100%;
-        display: block;
+        display: block;//invade todo el espacio disponible
     }
+
     &-body {
-        background-color: greenyellow;
+        // background-color: greenyellow;
        display: flex;
        flex-direction: column;
        align-items: center; 
+       border-bottom: 1px solid var(--color2);
        &-contentimg {
         border: 5px solid #F08B63;
         border-radius: 50%;
-        
         background-color: #FFD8C7;
         box-shadow: 0px -10px 20px #F08B63;
+        margin-top: calc(-50px - 8px);
         &-img {
             padding: 20px;
         }
+       }
+        &-title {
+            font-size: 3rem;
+            margin-top: 2rem;
+            span{
+                color: var(--color2);
+            }
        }
     }
     &-footer {
         display: flex;
         justify-content: space-around;
+        &-poder {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }
