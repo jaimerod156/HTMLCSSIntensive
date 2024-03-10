@@ -124,7 +124,7 @@ main .banner .sombraImg {
 main .banner .content {
   position: relative;
   z-index: 1;
-  max-width: 500px;
+  max-width: 550px;
 }
 main .banner .content .movietitle {
   max-width: 250px;
@@ -263,7 +263,7 @@ main .trailer .close {
   }
   main header .search {
     position: relative;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     height: 40px;
   }
   main .banner {

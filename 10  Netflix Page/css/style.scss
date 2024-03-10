@@ -120,7 +120,7 @@ main {
         .content {
             position: relative;
             z-index: 1;
-            max-width: 500px;
+            max-width: 550px;
             .movietitle {
                 max-width: 250px;
             }
@@ -261,9 +261,8 @@ main {
 
             .search {
                 position: relative;
-                width: calc(100% - 40px);
+                width: calc(100% - 20px);
                 height: 40px;
-
             }
         }
         .banner {
