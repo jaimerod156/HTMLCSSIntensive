@@ -11,9 +11,8 @@ section {
     min-height: 100vh;
     padding: 100px 100px 0;
     background: linear-gradient(to bottom, #d509a0, #ff606e);
-
     header{
-        border: 2px solid white;
+        // border: 2px solid white;
         position: absolute;
         top: 0;
         left: 0;
@@ -30,22 +29,20 @@ section {
         .toggle {
             width: 30px;
             height: 30px;
-            // border: 1px solid white;
             background: url(../img/menu.png);
             background-size: 30px;
             cursor: pointer;
             background-position: center;
             background-repeat: no-repeat;
         }
-
-
     }
 
     .content{
-        border: 2px solid white;
+        // border: 2px solid white;
         position: relative;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
+        padding-bottom: 40px;
         .imgBx{
             position: relative;
             width: 100%;
@@ -57,7 +54,7 @@ section {
             }
         }
         .text{
-            border: 2px solid white;
+            // border: 2px solid white;
             max-width: 700px;
             margin-top: 20px;
             h2{
@@ -82,6 +79,28 @@ section {
             }
         }
     }
+
+    .sci{
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        li{
+            list-style: none;
+            a {
+                display: block;
+                color: #fff;
+                &:hover{
+                    transform: scale(1.4);  
+                    transition: 0.6s;     
+                    cursor: pointer;          
+                }
+            }
+        }
+    }
     &::before{
         content: "ZOOMX";
         font-size: 20vw;
@@ -103,10 +122,39 @@ section {
     section{
         padding: 40px 40px 0;
         overflow: hidden;
+        &::before{
+            font-size: 20vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .content{
+            margin-top: 120px;
+            .imgBx{
+                margin-top: 65px;
+            }
+        }
+        .sci{
+            position: relative;
+            justify-content: flex-start;
+            flex-direction: row;
+            bottom: 10px;
+            right: inherit;
+            margin-top: 40px;
+            li{
+                margin-right: 15px;
+            }
+        }
     }
 
 }
 
-@keyframes identifier {
+@keyframes animacionZapatilla {
+    0%, 100%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
     
 }
