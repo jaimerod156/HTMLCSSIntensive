@@ -1,0 +1,381 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+}
+
+main {
+  position: relative;
+}
+main .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+main .header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1, 2em;
+}
+main .header .toggle img {
+  max-width: 40px;
+  cursor: pointer;
+}
+main .banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1000;
+  background: linear-gradient(to top, #111, transparent);
+}
+main .banner .fit-Bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+main .banner .content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  z-index: 10000;
+}
+main .banner .content h2 {
+  font-size: 3em;
+  width: 100%;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+main .banner .content p {
+  color: #fff;
+  font-size: 1.2em;
+}
+main .about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .about .content-bx {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  align-items: end;
+  padding-right: 40px;
+}
+main .about .content-bx p {
+  text-align: end;
+}
+main .about .img-bx {
+  position: relative;
+  width: 50%;
+  min-height: 500px;
+  padding-right: 50px;
+}
+main .about .img-bx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+main .banner2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .banner2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to top, #111, transparent);
+}
+main .banner2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+main .destination {
+  position: relative;
+  text-align: center;
+}
+main .destination .content {
+  width: 100%;
+  text-align: center;
+}
+main .destination .destination-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+main .destination .destination-list:hover .box {
+  opacity: 0.2;
+}
+main .destination .destination-list .box {
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  background: #191919;
+  transition: 0.5s;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+main .destination .destination-list .box:hover {
+  opacity: 1;
+}
+main .destination .destination-list .box .img-bx {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+main .destination .destination-list .box .content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .destination .destination-list .box .content h3 {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+main .destination .destination-list .box .content h3 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
+}
+main .banner3 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .banner3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to top, #111, transparent);
+}
+main .banner3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+main .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .footer .sci {
+  position: relative;
+  display: flex;
+}
+main .footer .sci li {
+  list-style: none;
+}
+main .footer .sci li a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+main .footer .sci li a img {
+  filter: invert(1);
+  max-width: 40px;
+}
+main .footer .copyright {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+main .footer .copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.btn {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.title-text {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #fff;
+  font-size: 1em;
+}
+
+.img-bx {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+}
+.img-bx img {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fit-Bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px;
+  }
+  .banner img {
+    min-height: 100%;
+  }
+  .banner h2 {
+    font-size: 2.5em;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .content-bx {
+    flex-direction: column;
+    min-width: 100%;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .about .img-bx {
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .img-bx .fit-Bg {
+    width: 100%;
+  }
+  .img-bx {
+    min-height: 250px;
+  }
+  .title-text {
+    font-size: 1.5em;
+  }
+  a.btn {
+    margin-bottom: 40px;
+  }
+  .destination-list .box {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+    min-width: initial;
+  }
+  .destination-list .box .img-bx {
+    height: 320px;
+  }
+  .destination-list .box .img-bx .fit-Bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .footer .sci li a img {
+    filter: invert(1);
+    max-width: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
