@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -55,15 +56,7 @@ main{
             z-index: 1000;
             background: linear-gradient(to top, #111, transparent);
         }
-        .fit-Bg{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            object-fit: cover;
-            opacity: 0.8;
-            
-        }
+
         .content{
             position: relative;
             max-width: 900px;
@@ -87,47 +80,8 @@ main{
 
         }
     }
-    .about{
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        .content-bx{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // min-width: 50%;
-            width: 50%;
-            align-items: end;
-            padding-right: 40px;
 
-            p{
-                text-align: end;
-            }
-            
-        }
-        .img-bx{
-            position: relative;
-            // min-width: 50%;
-            width: 50%;
-            min-height: 500px;
-            padding-right: 50px;
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 80%;
-                height: 100;
-                object-fit: cover;
-                border-radius: 15px;
-            }
-        }
 
-    }
     .banner2{
         position: relative;
         width: 100%;
@@ -281,6 +235,26 @@ main{
     }
 }
 
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .content-bx{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        min-width: 50%;
+        width: 50%;
+        // height: 100%;
+        text-align: end;
+        padding-right: 40px;
+    }
+}
+
 a.btn{
     position: relative;
     display: inline-block;
@@ -304,10 +278,12 @@ a.btn{
 }
 .img-bx{
     position: relative;
-    min-width: 50%;
+    // min-width: 50%;
     width: 50%;
     height: 500px;
     overflow: hidden;
+    padding-right: 50px;
+    
     img{
         border-radius: 15px;
         position: absolute;
@@ -407,4 +383,17 @@ a.btn{
             }
         }
     }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #222;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
 }
