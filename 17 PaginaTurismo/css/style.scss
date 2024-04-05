@@ -72,15 +72,10 @@ main{
             }
             p{
                 color: #fff;
-                font-size: 1.2em;
-
-                
+                font-size: 1.2em;   
             }
-
-
         }
     }
-
 
     .banner2{
         position: relative;
@@ -179,6 +174,7 @@ main{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        
         &::before{
             content: "";
             position: absolute;
@@ -243,13 +239,8 @@ main{
     align-items: center;
     padding: 20px;
     .content-bx{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         min-width: 50%;
         width: 50%;
-        // height: 100%;
         text-align: end;
         padding-right: 40px;
     }
@@ -263,7 +254,7 @@ a.btn{
     text-decoration: none;
     margin-top: 30px;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .title-text{
@@ -278,7 +269,7 @@ a.btn{
 }
 .img-bx{
     position: relative;
-    // min-width: 50%;
+    min-width: 50%;
     width: 50%;
     height: 500px;
     overflow: hidden;
