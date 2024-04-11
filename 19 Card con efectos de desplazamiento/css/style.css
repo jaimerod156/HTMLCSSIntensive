@@ -52,7 +52,7 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.04);
 }
 .container .card .box .content {
   padding: 20px;
@@ -63,7 +63,7 @@ body {
   top: -10px;
   right: 30px;
   font-size: 8em;
-  color: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.07);
   transition: 0.5s;
 }
 .container .card .box .content h3 {
