@@ -112,6 +112,40 @@ body{
         .content{
             max-height: 0;
             overflow: hidden;
+            p{
+                position: relative;
+                padding: 10px 0;
+                color: #333;
+                z-index: 10;
+            }
+        }
+        &:nth-child(2){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #70f570 10%, #49d628 100%);
+                }
+            }
+        }
+        &:nth-child(3){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #3c8ce7 10%, #00eaff);
+                }
+            }
+        }
+        &:nth-child(4){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+                }
+            }
+        }
+        &:nth-child(5){
+            label{
+                h2{
+                    background: linear-gradient(135deg, #fdef6a 10%, #ffc600 100%);
+                }
+            }
         }
     }
 

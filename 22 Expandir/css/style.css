@@ -105,4 +105,22 @@ body {
 .container .tab .content {
   max-height: 0;
   overflow: hidden;
+}
+.container .tab .content p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+.container .tab:nth-child(2) label h2 {
+  background: linear-gradient(135deg, #70f570 10%, #49d628 100%);
+}
+.container .tab:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #3c8ce7 10%, #00eaff);
+}
+.container .tab:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+}
+.container .tab:nth-child(5) label h2 {
+  background: linear-gradient(135deg, #fdef6a 10%, #ffc600 100%);
 }/*# sourceMappingURL=style.css.map */
