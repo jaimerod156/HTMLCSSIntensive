@@ -6,6 +6,7 @@
 }
 
 body {
+  margin: 50px auto;
   background-color: #d8dae2;
   display: flex;
   justify-content: center;
@@ -13,11 +14,18 @@ body {
   min-height: 100vh;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
 main {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 50px auto;
   background: #eff0f1;
   border-radius: 26px;
   box-shadow: 0px 76px 27px rgba(6, 27, 82, 0.1);
@@ -35,6 +43,11 @@ main .header .buttons {
   flex-wrap: wrap;
   gap: 10px;
 }
+main .header .buttons .active {
+  color: #fff;
+  background: #bc9682;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
 main .header .buttons span {
   padding: 8px 10px;
   background: #ffffff;
@@ -45,4 +58,56 @@ main .header .buttons span {
 main .header .buttons span:hover {
   cursor: pointer;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+main .card-ctn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(250px, 1fr);
+  gap: 20px;
+}
+main .card-ctn .card {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  min-height: 250px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+main .card-ctn .card .img-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 220px 80px;
+  gap: 20px;
+}
+main .card-ctn .card .img-ctn .img {
+  overflow: hidden;
+  border-radius: 16px;
+}
+main .card-ctn .card .img-ctn .img:first-of-type {
+  grid-column: 1/4;
+}
+main .card-ctn .card .info {
+  color: #0e0e38;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .card-ctn .card .info h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+main .card-ctn .card .info .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+main .card-ctn .card .info .tag img {
+  width: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
