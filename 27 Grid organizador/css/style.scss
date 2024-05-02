@@ -6,7 +6,6 @@
 }
 
 body{
-    margin:50px auto;
     background-color: #d8dae2;
     display: flex;
     justify-content: center;
@@ -20,6 +19,7 @@ img{
     cursor: pointer;
 }
 main{
+    margin:50px auto;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
