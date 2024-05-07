@@ -41,10 +41,11 @@
         </nav>
     </header>
     <main class="main">
+        <!-- Menu -->
         <section class="home container " id="home">
             <div class="swiper home-swiper">
                 <div class="swiper-wrapper">
-                    <section class="swiper-slider">
+                    <section class="swiper-slide">
                         <div class="home__content grid">
                             <article class="content_burbuja">
                                 <img class="box" src="./img/bb2.jpeg" alt="">
@@ -55,7 +56,7 @@
                                     <img src="./img/burbujasecun.svg" alt="">
                                 </div>
                             </article>
-                            <div class="home_data">
+                            <div class="home__data">
                                 <h3 class="home__subtitle">#La pelicula</h3>
                                 <h4 class="home__title">
                                     HEY <br>
@@ -65,9 +66,12 @@
                                 <p class="home__description">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ad pariatur dicta ipsam fugit ab. Animi, a tenetur cum quaerat vitae velit excepturi nihil deleniti quia facilis aliquid blanditiis quas.
                                 </p>
-                                <div class="home_buttons">
+                                <div class="home__buttons">
                                     <a href="#" class="button"> Reservar ahora</a>
-                                    <a href="#" class="button--link button--flex"></a>
+                                    <a href="#" class="button--link button--flex">
+                                        trailer
+                                        <i class='bx bx-right-arrow-alt button__icon'></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -75,9 +79,81 @@
                 </div>
             </div>
         </section>
+        <!-- categorias -->
+        <section class="section category" id="about">
+            <h2 class="section__title">Actores</h2>
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <div class="contentImgCate">
+                        <img src="./img/bb1.jpg" class="category__img">
+                    </div>
+                    <h3 class="category__title">Ryan Gosling</h3>
+                    <p class="category__description">
+                        Aqui va la descripcion que se desee.
+                    </p>
+                </div>
+                <div class="category__data">
+                    <div class="contentImgCate">
+                        <img src="./img/bb3.jpg" class="category__img">
+                    </div>
+                    <h3 class="category__title">John Cena</h3>
+                    <p class="category__description">
+                        Aqui va la descripcion que se desee.
+                    </p>
+                </div>
+                <div class="category__data">
+                    <div class="contentImgCate">
+                        <img src="./img/bb2.jpeg" class="category__img">
+                    </div>
+                    <h3 class="category__title">Margot Robbie</h3>
+                    <p class="category__description">
+                        Aqui va la descripcion que se desee.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Deja tu correo -->
+        <section class="section newsletter">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Nuestro boletin</h2>
+                <p class="newsletter__description">
+                    Promocion de nuevos productos y ventas. Directamente a su bandeja de entrada
+                </p>
+                <form class="newsletter__form">
+                    <input type="text" class="newsletter__input" placeholder="Introduce tu correo electronico">
+                    <button class="button">Subscribirse</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <!-- pie de pagina -->
+    <footer class="footer section">
+        <div class="footer__container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="./img/barbielogo.png" alt="" class="footer__logo-img">
+                </a>
+                <p class="footer_description">
+                    Disfruta de html y css <br>
+                    en tu vida
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
