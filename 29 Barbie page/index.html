@@ -10,38 +10,71 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav_logo">
-                <img src="./img/barbielogo.png" alt="Barbie logo" class="nav-logo_img">
+            <a href="#" class="nav__logo">
+                <img src="./img/barbielogo.png" alt="Barbie logo" class="nav__logo-img">
             </a>
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Home</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Actores</a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Actores</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Reparto</a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Reparto</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Acerca de</a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Acerca de</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">Login</a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Login</a>
                     </li>
                 </ul>
-                <div class="nav_close" id="nav-close">
+                <div class="nav__close" id="nav-close">
                     <i class='bx bx-x'></i>
                 </div>
             </div>
-            <div class="nav_toggle" id="nav-toggle">
+            <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-grid-alt' ></i>
             </div>
         </nav>
     </header>
-    <main>
-        <section id="home"></section>
+    <main class="main">
+        <section class="home container " id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slider">
+                        <div class="home__content grid">
+                            <article class="content_burbuja">
+                                <img class="box" src="./img/bb2.jpeg" alt="">
+                                <div class="blob">
+                                    <img src="./img/burbuja.svg" alt="">
+                                </div>
+                                <div class="blob">
+                                    <img src="./img/burbujasecun.svg" alt="">
+                                </div>
+                            </article>
+                            <div class="home_data">
+                                <h3 class="home__subtitle">#La pelicula</h3>
+                                <h4 class="home__title">
+                                    HEY <br>
+                                    BARBIE <br>
+                                    !!!
+                                </h4>
+                                <p class="home__description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ad pariatur dicta ipsam fugit ab. Animi, a tenetur cum quaerat vitae velit excepturi nihil deleniti quia facilis aliquid blanditiis quas.
+                                </p>
+                                <div class="home_buttons">
+                                    <a href="#" class="button"> Reservar ahora</a>
+                                    <a href="#" class="button--link button--flex"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
