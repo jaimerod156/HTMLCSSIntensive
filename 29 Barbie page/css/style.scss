@@ -307,8 +307,6 @@ button{
     &__container{
         row-gap: 2rem;
     }
-    // &__content{
-    // }
     &__logo{
         display: flex;
         align-items: center;
@@ -338,6 +336,7 @@ button{
             }
         }
     }
+
     &__title{
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-1);
@@ -354,12 +353,8 @@ button{
             color: var(--title-color);
         }
     }
-    &__copy{
-        display: block;
-        text-align: center;
-    }
     &__img-one,
-     &__img-two{
+    &__img-two{
         position: absolute;
         transition: 0.3s;
         animation: floating 2s ease-in-out infinite;
@@ -374,6 +369,10 @@ button{
         bottom: 4rem;
         right: 4rem;
     } 
+    &__copy{
+        display: block;
+        text-align: center;
+    }
 
 }
 
@@ -426,7 +425,7 @@ button{
     }
 
     .section{
-        padding: 7rem 2rem;
+        padding: 7rem 0 2rem;
     }
 
     .nav__list{
@@ -507,7 +506,7 @@ button{
         width: 120px;
     }
     .footer__img-two{
-        width: 180px;
+        width: 130px;
         top: 30%;
         left: -3%;
     }
@@ -534,7 +533,7 @@ button{
       border-radius: 30% 70% 70% 30% / 30% 35% 65% 70%;
     }
   }
-  @keyframes floating {
+@keyframes floating {
     0%{
         transform: translate(0, 0px);
     }

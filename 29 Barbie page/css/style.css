@@ -333,10 +333,6 @@ button {
 .footer__link:hover {
   color: var(--title-color);
 }
-.footer__copy {
-  display: block;
-  text-align: center;
-}
 .footer__img-one, .footer__img-two {
   position: absolute;
   transition: 0.3s;
@@ -351,6 +347,10 @@ button {
   width: 150px;
   bottom: 4rem;
   right: 4rem;
+}
+.footer__copy {
+  display: block;
+  text-align: center;
 }
 
 .footer__img-one:hover, .footer__img-two:hover {
@@ -396,7 +396,7 @@ button {
     display: none;
   }
   .section {
-    padding: 7rem 2rem;
+    padding: 7rem 0 2rem;
   }
   .nav__list {
     display: flex;
@@ -475,7 +475,7 @@ button {
     width: 120px;
   }
   .footer__img-two {
-    width: 180px;
+    width: 130px;
     top: 30%;
     left: -3%;
   }

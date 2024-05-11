@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", system-ui, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  background: #212121;
+  color: #ddd;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  max-width: 75rem;
+  padding: 3rem 1.5rem;
+}
+.main .main__heading {
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  color: #eceff1;
+}
+.main .cards {
+  position: relative;
+}
+.main .cards .cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.card {
+  --hsl:var(--hue), var(--saturacion), var(--luminosidad);
+  display: grid;
+  flex: 1 1 14rem;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: center;
+  gap: 1.25rem;
+  color: #eceff1;
+  background: #2b2b2b;
+  border: 1px solid rgba(236, 239, 241, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  transition: 400ms background ease;
+}
+.card:hover {
+  cursor: pointer;
+  background: hsla(var(--hsl), 0.1);
+}
+.card:nth-child(1) {
+  --hue:165;
+  --saturacion:82.26%;
+  --luminosidad:51.37% ;
+}
+.card:nth-child(2) {
+  --hue:291.34;
+  --saturacion:95.9%;
+  --luminosidad:61.76% ;
+}
+.card:nth-child(3) {
+  --hue:338.69;
+  --saturacion:100%;
+  --luminosidad:48.04% ;
+}
+.card .card__heading {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+.card .card__price {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.card .card__bullets {
+  line-height: 1.4;
+}
+.card .card__bullets > li::before {
+  display: inline-block;
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZ1JREFUSEvtkz2ozmEYh6/LRykfpZxMJmc3HGWhs9jolJQ4JRmUBZPB16IUmXwsyiAyYDNgYKGzmEyySNlsUkrEz3vrefWej/e876vO5Nzb87/v5/e7/9d9P7LE4RLrs2wwkPB/iCjJJmBavT6XT5LNwEH1Wjc3EqIka4BXwHbghHqzK5RkLTADbANOqjcqN7RBkqp9BOwHPpeJ+r5EkqwEngG7gS/ADvXdqAaXgLPAN2BSfd3T/R3gCPCjTNSXIyFKMg3cB34Ce9Xq9k8kuQBcbMfi/6B3NrMQJTkH3FM/9ghMAs+BVcBRtbrtih8G7rbjGfXy3MH/NUhyACj34nuoukwyDhSKjcB5tTB1xYv302Z8Wz220KvrNVgNXAVOtcIrbaBlcks93pDsAU4DE8A64AkwpRa+eTFvi5JMFSZgQ6t+DOxTf7Vt+QBsabk3HXw71a8LiffdoiQl8LAzvBXALvV7D5qtnW8vGpoJ9VM/8b4GDUXt9nq1ZjIrkowBY+rbxcQXNRh0cdj80C95WMG+a/qvAoPuLf/BIEL8Bok5fhny5MBPAAAAAElFTkSuQmCC");
+  margin-right: 1rem;
+  transform: translateY(0.25rem);
+}
+.card .cta {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #0d0d0d;
+  padding: 0.7em;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
